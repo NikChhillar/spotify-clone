@@ -11,6 +11,7 @@ import useAuthModal from "@/hooks/useAuthModal";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useUser } from "@/hooks/useUser";
 import { toast } from "react-hot-toast";
+import usePlayer from "@/hooks/usePlayer";
 
 interface HeaderProps {
   children: React.ReactNode;
@@ -20,6 +21,7 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ children, className }) => {
   const router = useRouter();
 
+  const player = usePlayer();
   const authModal = useAuthModal();
   const supabaseClient = useSupabaseClient();
 
@@ -29,6 +31,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
     const { error } = await supabaseClient.auth.signOut();
     // ---------------------------------
 
+    player.reset();
     router.refresh();
 
     if (error) {
@@ -80,10 +83,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
               <Button onClick={handleLogOut} className="bg-white px-6 py-2">
                 Logout
               </Button>
-              <Button
-                onClick={() => router.push("/")}
-                className="bg-white"
-              >
+              <Button onClick={() => router.push("/")} className="bg-white">
                 <FaUserAlt />
               </Button>
             </div>
