@@ -1,11 +1,3 @@
-![image](https://github.com/NikChhillar/spotify-clone/assets/90024300/4d1a7e38-cca1-4e9a-b516-13f824bd8d9e)
-
-![image](https://github.com/NikChhillar/spotify-clone/assets/90024300/fee01ca4-5a5e-44d7-9eda-80a3eb50439b)
-
-![image](https://github.com/NikChhillar/spotify-clone/assets/90024300/9e76810f-1752-4ce9-a454-ca6e563ef6ac)
-
-![image](https://github.com/NikChhillar/spotify-clone/assets/90024300/63e869eb-187f-4e3e-8d71-5424e06e7e3c)
-
 
 ## SoulMelody
 This repository contains a music streaming web application built using Next.js and Tailwind CSS. The project aims to provide users with an immersive music experience, including features like song upload, authentication, favorites system, playlists, and an advanced player component. It utilizes Supabase and PostgreSQL for database handling, ensuring efficient data storage and retrieval. The project is fully responsive, offering a seamless user experience across all devices.
