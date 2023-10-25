@@ -78,7 +78,7 @@ SoulMelody is a comprehensive music streaming platform that not only allows user
 
 To run the SoulMelody application locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/username/SoulMelody.git`
+1. Clone the repository: `git clone https://github.com/NikChhillar/spotify-clone.git`
 2. Install the dependencies: `npm install`
 3. Start the development server: `npm run dev`
 
